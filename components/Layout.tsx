@@ -13,7 +13,7 @@ export default function Layout({children}:LayoutProps) {
         {popUp && <LightBox />}
         <div className="mx-0 lg:mx-10 xl:mx-52">
             <NavBar/>
-            <hr className="border-[#E4E9F2] mt-3.5"/>
+            <hr className="hidden sm:block sm:border-[#E4E9F2] sm:mt-3.5"/>
             <main>{children}</main>
         </div>
         </>
