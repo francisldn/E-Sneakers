@@ -1,10 +1,8 @@
-import {Dispatch, SetStateAction} from 'react';
 import {products} from './ProductData'
 import {ContextProvider} from '../AppContext'
-import { divide } from 'cypress/types/lodash';
 
 const Cart = () => {
-    const {number, setNumber} = ContextProvider();
+    const {number, setNumber, setAddItem, addItem} = ContextProvider();
 
     const totalAmount = (price: string, quantity: number) => {
         let priceNumber = Number(price.slice(1));
@@ -13,14 +11,15 @@ const Cart = () => {
 
     const ClickDelete = () => {
         setNumber(0)
+        setAddItem(false)
     }
 
     return (
-        <div className="flex flex-col absolute z-10 h-[256px] bg-[rgb(255,255,255)] rounded-xl top-28 inset-x-4 sm:max-w-[360px] sm:max-h-[256px] drop-cart sm:ml-auto sm:right-60">
+        <div className="flex flex-col absolute z-10 h-[256px] bg-[rgb(255,255,255)] rounded-xl top-16 inset-x-4 sm:max-w-[360px] sm:max-h-[256px] drop-cart sm:ml-auto sm:right-10">
             <div className="text-[16px] font-semibold p-5 sm:p-4">Cart</div>
             <hr className="text-[#E4E9F2]"/>
             <div className="flex flex-col mt-7 text-[15px] leading-6 mx-auto  text-grey">
-                {number > 0 
+                {number > 0 && addItem
                     ? (<>
                     <div className="flex gap-4">
                         <div className="w-[50px] h-[50px] rounded-md overflow-hidden">

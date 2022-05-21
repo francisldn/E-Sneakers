@@ -16,7 +16,7 @@ const TogglePrevious = () => {
     }
     
     return (
-        <div className="flex flex-1 w-[40px] absolute h-[40px] rounded-full bg-[rgb(255,255,255)] items-center top-52 left-4 cursor-pointer z-0" onClick={clickPrevious}>
+        <div className="flex flex-1 w-[40px] absolute sm:relative h-[40px] rounded-full bg-[rgb(255,255,255)] items-center top-60 left-4 cursor-pointer z-0" onClick={clickPrevious}>
                 <img src="/images/icon-previous.svg" alt="" className="flex object-fill ml-3"/>
         </div>
     );

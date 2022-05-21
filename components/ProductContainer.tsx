@@ -1,16 +1,17 @@
 import Display from "./Display";
 import AddToCart from './AddToCart'
 import {products} from './ProductData';
-
+import {ContextProvider} from '../AppContext'
+import LightBox from './LightBox';
 
 const ProductContainer = () => {
-    
+    const {popUp, toggleCart} = ContextProvider();
     return (
         <div className="sm:flex sm:justify-start h-[900px] sm:h-full sm:mx-8">
             <div>
                 <Display />
             </div>
-            <div className="sm:ml-3 lg:ml-20 lg:mr-14 sm:mr-5 xl:mt-20 xl:w-[445px]">
+            <div className="sm:ml-3 lg:ml-20 lg:mr-14 sm:mr-5 sm:mt-20 xl:w-[445px]">
                 <div className="flex justify-start flex-col m-[24px] mx-4">
                     <p className="text-xs text-orange font-semibold tracking-wider">SNEAKER COMPANY</p>
                     <h1 className="mt-3 text-[28px] font-bold leading-8 sm:leading-tight item-title">{products[0].name}</h1>

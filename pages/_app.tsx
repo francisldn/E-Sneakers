@@ -11,14 +11,29 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [cartOpen, setCartOpen] = useState(false)
   const [imgCount, setImgCount] = useState<number>(0);
   const [image, setImage] = useState(images[0].fullsize)
+  const [popUp, setPopUp] = useState(false);
+  const [addItem, setAddItem] = useState(false);
 
   const ClickAdd = () => {
-        setNumber(prev => prev+1)
+      if(!addItem) {
+        setNumber(prev => prev + 1 )
+      }
     }
 
   const ClickMinus = () => {
-        setNumber(prev => prev === 0 ? 0 : prev-1)
+        if(!addItem) {
+          setNumber(prev => prev === 0 ? 0 : prev-1)
+        }
     }
+
+  const ImagePopUp = () => {
+      setPopUp(!popUp)
+  }
+
+  const toggleCart = () => {
+    setCartOpen(!cartOpen);
+}
+
   const value = {
     number,
     setNumber,
@@ -31,7 +46,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     imgCount,
     setImgCount,
     image,
-    setImage
+    setImage,
+    popUp,
+    setPopUp,
+    ImagePopUp,
+    addItem,
+    setAddItem,
+    toggleCart,
   }
 
   return (

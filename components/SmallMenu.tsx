@@ -6,17 +6,17 @@ interface SmallMenuProps {
 
 const SmallMenu = ({setMenuOpen}:SmallMenuProps) => {
 
-    const closeMenu= () => {
+    const CloseMenu= () => {
         setMenuOpen(false);
     }
 
 
     return (
         <>
-            <div className="absolute w-full h-[900px] bg-[rgb(0,0,0,0.7)] top-0 left-0 z-10">
+            <div className="absolute w-full h-[900px] bg-[rgb(0,0,0,0.7)] top-0 left-0 z-10" onClick={CloseMenu}>
             </div>
             <div className="absolute w-[250px] h-[900px] bg-[rgb(255,255,255)] top-0 left-0 z-20">
-                <div className="w-14 h-14 p-5 cursor-pointer" onClick={closeMenu}>
+                <div className="w-14 h-14 p-5 cursor-pointer" onClick={CloseMenu}>
                     <img src="/images/icon-close.svg" alt="" className="object-fill"/>
                 </div>
                 <div>
