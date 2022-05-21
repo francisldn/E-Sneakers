@@ -1,4 +1,4 @@
-import {createContext, Dispatch, SetStateAction, useContext, useState} from 'react';
+import {createContext, Dispatch, SetStateAction, useContext} from 'react';
 import {images} from './components/ProductData';
 
 interface contextType {
@@ -14,6 +14,12 @@ interface contextType {
     setImgCount:Dispatch<SetStateAction<number>>,
     image:string,
     setImage:Dispatch<SetStateAction<string>>,
+    popUp: boolean,
+    setPopUp: Dispatch<SetStateAction<boolean>>,
+    ImagePopUp: () => void,
+    addItem: boolean,
+    setAddItem: Dispatch<SetStateAction<boolean>>,
+    toggleCart: () => void,
 }
 
 const contextDefaultValues: contextType = {
@@ -29,6 +35,12 @@ const contextDefaultValues: contextType = {
     setImgCount:() => {},
     image:images[0].fullsize,
     setImage:() => {},
+    popUp: false,
+    setPopUp: ()=> {},
+    ImagePopUp: () => {},
+    addItem: false,
+    setAddItem: () => {},
+    toggleCart: () => {},
 }
 
 export const AppContext = createContext<contextType>(contextDefaultValues);
