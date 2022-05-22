@@ -30,13 +30,13 @@ const ProductContainer = () => {
             <div>
                 <Display />
             </div>
-            <div className="sm:ml-3 lg:ml-20 lg:mr-14 sm:mr-5 sm:mt-20 xl:w-[445px]">
-                <div className="flex justify-start flex-col m-[24px] mx-4">
+            <div className="sm:ml-3 lg:ml-20 sm:mr-5 sm:mt-24 xl:w-[445px]">
+                <div className="flex justify-start flex-col my-[24px] mx-4">
                     <p className="text-xs text-orange font-semibold tracking-wider">SNEAKER COMPANY</p>
-                    <h1 className="mt-3 text-[28px] font-bold leading-8 sm:leading-tight item-title">{products[0].name}</h1>
-                    <p className="leading-7 sm:leading-relaxed text-grey mt-3 text-[15px]">{products[0].description}</p>
+                    <h1 className="mt-3 text-[44px] font-bold leading-8 sm:leading-tight item-title">{products[0].name}</h1>
+                    <p className="leading-7 sm:leading-relaxed text-grey mt-5 text-[15px]">{products[0].description}</p>
                 </div>
-                <div className="flex gap-4 ml-6 items-center mx-4 sm:flex-col sm:ml-4 sm:justify-start sm:items-start sm:gap-2 sm:-mt-3">
+                <div className="flex gap-4 ml-6 items-center mx-4 sm:flex-col sm:ml-4 sm:justify-start sm:items-start sm:gap-2">
                     <div className="flex flex-1 gap-5 sm:gap-5">
                         <h1 className="text-[28px] font-bold">{products[0].price}</h1>
                         <div className="bg-[#FFEEE2] p-1 text-orange font-semibold rounded-md">{products[0].discount}</div>
