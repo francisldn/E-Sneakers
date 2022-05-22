@@ -12,7 +12,7 @@ const LightBox = () => {
         setPopUp(!popUp)
     }
 
-    const CloseLightBoxFromBackground = (event:MouseEvent) => {
+    const CloseLightBoxFromBackground = (event:React.MouseEvent) => {
         if(divRef.current === event.target) {
             setPopUp(false)
         }
@@ -31,7 +31,7 @@ const LightBox = () => {
     },[keyPress])
 
     return (
-        <div className="hidden sm:fixed sm:min-w-full sm:h-full sm:bg-[rgb(0,0,0,0.8)] sm:z-10 sm:flex sm:flex-col sm:justify-center sm:items-center" onClick={(e)=> CloseLightBoxFromBackground(e)} ref={divRef}>
+        <div className="hidden sm:fixed sm:min-w-full sm:h-full sm:bg-[rgb(0,0,0,0.8)] sm:z-10 sm:flex sm:flex-col sm:justify-center sm:items-center" onClick={(e:React.MouseEvent)=> CloseLightBoxFromBackground(e)} ref={divRef}>
             <div className="z-20 flex flex-col max-w-[606px] max-h-[722px]">
                 <div className="self-end mr-12 mb-5" onClick={CloseLightBox}>
                     <img src="/images/icon-close-white.svg" alt=""/>
