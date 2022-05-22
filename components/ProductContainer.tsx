@@ -33,7 +33,7 @@ const ProductContainer = () => {
             <div className="sm:ml-3 lg:ml-20 sm:mr-5 sm:mt-24 xl:w-[445px]">
                 <div className="flex justify-start flex-col my-[24px] mx-4">
                     <p className="text-xs text-orange font-semibold tracking-wider">SNEAKER COMPANY</p>
-                    <h1 className="mt-3 text-[44px] font-bold leading-8 sm:leading-tight item-title">{products[0].name}</h1>
+                    <h1 className="mt-3 text-[28px] sm:text-[44px] font-bold leading-10 sm:leading-tight item-title">{products[0].name}</h1>
                     <p className="leading-7 sm:leading-relaxed text-grey mt-5 text-[15px]">{products[0].description}</p>
                 </div>
                 <div className="flex gap-4 ml-6 items-center mx-4 sm:flex-col sm:ml-4 sm:justify-start sm:items-start sm:gap-2">
