@@ -21,11 +21,11 @@ const SmallMenu = ({setMenuOpen}:SmallMenuProps) => {
                 </div>
                 <div>
                     <ul className="list-none text-[18px] font-semibold ml-5 mt-6 flex flex-col gap-4">
-                        <li className="cursor-pointer">Collections</li>
-                        <li className="cursor-pointer">Men</li>
-                        <li className="cursor-pointer">Women</li>
-                        <li className="cursor-pointer">About</li>
-                        <li className="cursor-pointer">Contact</li>
+                        <li className="cursor-pointer hover:text-[20px]">Collections</li>
+                        <li className="cursor-pointer hover:text-[20px]">Men</li>
+                        <li className="cursor-pointer hover:text-[20px]">Women</li>
+                        <li className="cursor-pointer hover:text-[20px]">About</li>
+                        <li className="cursor-pointer hover:text-[20px]">Contact</li>
                     </ul>
                 </div>
             </div>
