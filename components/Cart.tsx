@@ -15,7 +15,7 @@ const Cart = () => {
     }
 
     return (
-        <div className="flex flex-col absolute z-10 h-[256px] bg-[rgb(255,255,255)] rounded-xl top-16 inset-x-4 sm:max-w-[360px] sm:max-h-[256px] drop-cart sm:ml-auto sm:right-10">
+        <div className="flex flex-col absolute z-10 h-[256px] bg-[rgb(255,255,255)] rounded-xl top-20 inset-x-4 sm:max-w-[360px] sm:max-h-[256px] drop-cart sm:ml-auto sm:right-10">
             <div className="text-[16px] font-semibold p-5 sm:p-4">Cart</div>
             <hr className="text-[#E4E9F2]"/>
             <div className="flex flex-col mt-7 text-[15px] leading-6 mx-auto  text-grey">
