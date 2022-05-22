@@ -4,14 +4,12 @@ import Cart from './Cart';
 import {ContextProvider} from '../AppContext';
 
 const NavBar = () => {
-    const {menuOpen, setMenuOpen, setCartOpen, cartOpen, number, addItem, toggleCart} = ContextProvider()
+    const {menuOpen, setMenuOpen, cartOpen, number, addItem, toggleCart} = ContextProvider()
     
     const showMenu = () => {
         setMenuOpen(true);
     }
 
-   
-    
     return (
         <nav className="text-3xl flex pt-5 pl-5 space-around pb-5 z-10">
             {menuOpen && <SmallMenu setMenuOpen={setMenuOpen}/>}

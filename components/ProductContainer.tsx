@@ -5,7 +5,7 @@ import {ContextProvider} from '../AppContext'
 import {useRef, useCallback, useEffect} from 'react'
 
 const ProductContainer = () => {
-    const {popUp, setCartOpen, cartOpen, toggleCart} = ContextProvider();
+    const {setCartOpen, cartOpen, toggleCart} = ContextProvider();
     const divRef = useRef<HTMLDivElement>(null)
     
     const toggleCloseCart = (e:MouseEvent) => {

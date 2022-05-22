@@ -1,5 +1,4 @@
 import {ContextProvider} from '../AppContext';
-import {useState} from 'react';
 
 const AddToCart = () => {
     const {number, setNumber, ClickAdd, ClickMinus, setAddItem, addItem} = ContextProvider();

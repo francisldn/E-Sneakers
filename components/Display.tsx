@@ -1,4 +1,3 @@
-import {useRef, useState} from 'react';
 import TogglePrevious from './TogglePrevious';
 import ToggleNext from './ToggleNext';
 import ProductImageSelect from './ProductImageSelect'
@@ -7,7 +6,7 @@ import {ContextProvider} from '../AppContext';
 
 const Display = () => {
     const {ImagePopUp} = ContextProvider();
-    
+
     return (
         <>
         <div className="flex z-1">
