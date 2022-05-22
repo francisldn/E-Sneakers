@@ -27,17 +27,17 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="flex flex-row sm:justify-between sm:w-screen">
-                <div className="list-none hidden sm:list-item self-center flex-1">
+                <div className="list-none hidden sm:list-item self-center flex-1 w-[397px]">
                     <ul className="flex text-[15px] text-[#69707D] pl-4 ml-6">
-                        <li className="cursor-pointer absolute top-8 pb-6 menu-select">Collections</li>
-                        <li className="cursor-pointer absolute top-8 pb-6 menu-select ml-[7rem]">Men</li>
-                        <li className="cursor-pointer absolute top-8 pb-6 menu-select ml-[11rem]">Women</li>
-                        <li className="cursor-pointer absolute top-8 pb-6 menu-select ml-[17rem]">About</li>
-                        <li className="cursor-pointer absolute top-8 pb-6 menu-select ml-[22rem]">Contact</li>
+                        <li className="cursor-pointer absolute top-8 pb-8 menu-select">Collections</li>
+                        <li className="cursor-pointer absolute top-8 pb-8 menu-select ml-[7rem]">Men</li>
+                        <li className="cursor-pointer absolute top-8 pb-8 menu-select ml-[11rem]">Women</li>
+                        <li className="cursor-pointer absolute top-8 pb-8 menu-select ml-[17rem]">About</li>
+                        <li className="cursor-pointer absolute top-8 pb-8 menu-select ml-[22rem]">Contact</li>
                     </ul>
                 </div>
                
-                <div className="flex justify-self-end gap-7 sm:gap-8">
+                <div className="flex justify-self-end gap-7 sm:gap-8 mr-5">
                     {number > 0 && addItem && (<div className="flex absolute text-[rgb(255,255,255)] w-[19px] h-[13px] rounded-xl ml-2 bg-orange text-[10px] sm:top-9 cursor-pointer" onClick={toggleCart}>
                         <div className="self-center mx-auto font-semibold">{number}</div>
                     </div>)}
