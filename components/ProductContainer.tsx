@@ -2,12 +2,31 @@ import Display from "./Display";
 import AddToCart from './AddToCart'
 import {products} from './ProductData';
 import {ContextProvider} from '../AppContext'
-import LightBox from './LightBox';
+import {useRef, useCallback, useEffect} from 'react'
 
 const ProductContainer = () => {
-    const {popUp, toggleCart} = ContextProvider();
+    const {popUp, setCartOpen, cartOpen, toggleCart} = ContextProvider();
+    const divRef = useRef<HTMLDivElement>(null)
+    
+    const toggleCloseCart = (e:MouseEvent) => {
+        if(divRef.current === e.target) {
+            toggleCart()
+        } 
+    }
+
+    const EscapeCloseCart = useCallback((e:KeyboardEvent) => {
+        if(e.key === 'Escape' && cartOpen) {
+            setCartOpen(false);
+        }
+    },[setCartOpen, cartOpen])
+
+    useEffect(()=> {
+        document.addEventListener('keydown',EscapeCloseCart)
+        return () => document.removeEventListener('keydown',EscapeCloseCart)
+    },[EscapeCloseCart])
+
     return (
-        <div className="sm:flex sm:justify-start h-[900px] sm:h-full sm:mx-8">
+        <div className="sm:flex sm:justify-start h-[900px] sm:h-full sm:mx-8" onClick={(e) => toggleCloseCart(e)} ref={divRef}>
             <div>
                 <Display />
             </div>
