@@ -26,7 +26,7 @@ const ProductContainer = () => {
     },[EscapeCloseCart])
 
     return (
-        <div className="sm:flex sm:justify-start h-[900px] sm:h-full sm:mx-8 sm:pt-10" onClick={(e:React.MouseEvent) => toggleCloseCart(e)} ref={divRef}>
+        <div className="sm:flex sm:justify-start h-[900px] sm:h-full sm:mx-8 sm:pt-9" onClick={(e:React.MouseEvent) => toggleCloseCart(e)} ref={divRef}>
             <div>
                 <Display />
             </div>
