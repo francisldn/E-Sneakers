@@ -8,7 +8,7 @@ const ProductContainer = () => {
     const {setCartOpen, cartOpen, toggleCart} = ContextProvider();
     const divRef = useRef<HTMLDivElement>(null)
     
-    const toggleCloseCart = (e:MouseEvent) => {
+    const toggleCloseCart = (e:React.MouseEvent) => {
         if(divRef.current === e.target) {
             toggleCart()
         } 
@@ -26,7 +26,7 @@ const ProductContainer = () => {
     },[EscapeCloseCart])
 
     return (
-        <div className="sm:flex sm:justify-start h-[900px] sm:h-full sm:mx-8" onClick={(e) => toggleCloseCart(e)} ref={divRef}>
+        <div className="sm:flex sm:justify-start h-[900px] sm:h-full sm:mx-8" onClick={(e:React.MouseEvent) => toggleCloseCart(e)} ref={divRef}>
             <div>
                 <Display />
             </div>
