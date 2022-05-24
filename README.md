@@ -1,4 +1,6 @@
 # Frontend Mentor - E-commerce product page
+
+![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 ## The challenge
 
 User requirements for the e-commerce product page:
@@ -24,6 +26,9 @@ This project is built using the following:
 ## Challenges
 #### Create Lightbox feature
 * This is my first attempt at coding a lightbox feature. I have referred to a [youtube tutorial](https://www.youtube.com/watch?v=d3aI1Dt0Z50) which provides ideas about different ways of closing a lightbox (ie. 'escape' key, clicking outside the lightbox). Through the process, I learnt how to use ``useCallback`` hook in combination with ``useEffect``
+
+#### Setting up Context API in NextJS
+* Incredibly useful concept which I learnt is setting up Context api in NextJS. This allows the state and actions to be passed to different components easily. 
 #### Typescript errors
 * Also learnt about how to resolve typescript errors relating to ``useRef`` hook. Another instance of typescript error is different ways of typing ``event``. In particular, I realised that I need to denote ``React.MouseEvent`` for ``onClick`` event type, and not just ``MouseEvent``
 #### Reusable React components and refactoring
