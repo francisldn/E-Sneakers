@@ -1,6 +1,11 @@
 # Frontend Mentor - E-commerce product page
 
-![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
+<img src="mainpage.png" alt="product page">
+
+<img src="lightbox.png" alt="lightbox feature">
+
+<img src="checkout.png" alt="checkout cart">
+
 ## The challenge
 
 User requirements for the e-commerce product page:
