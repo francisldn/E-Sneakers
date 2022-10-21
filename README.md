@@ -1,4 +1,7 @@
-# Frontend Mentor - E-commerce product page
+# E-SNEAKERS
+
+## ABOUT
+E-Sneakers is a demo e-commerce storefront that displays sneakers and allow user to add the product to cart.
 
 <img src="mainpage.png" alt="product page">
 
@@ -6,19 +9,16 @@
 
 <img src="checkout.png" alt="checkout cart">
 
-## The challenge
-
+## APP FEATURES
 User requirements for the e-commerce product page:
-
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Open a lightbox gallery by clicking on the large product image
 - Switch the large product image by clicking on the small thumbnail images
 - Add items to the cart
 - View the cart and remove items from it
-## Building the project
-
-This project is built using the following:
+## TECH STACKS
+This project is built using:
 * NextJS / React
 * React Hooks: ``useCallback``, ``useEffect``, ``useState``, ``useRef``
 * Typescript
@@ -26,9 +26,9 @@ This project is built using the following:
 
 [Code](https://github.com/francisldn/fm-e-commerce/)
 
-[Frontend](https://fm-e-commerce.vercel.app/)
+[Frontend](https://e-sneakers.vercel.app/)
 
-## Challenges
+## CHALLENGES AND LEARNING
 #### Create Lightbox feature
 * This is my first attempt at coding a lightbox feature. I have referred to a [youtube tutorial](https://www.youtube.com/watch?v=d3aI1Dt0Z50) which provides ideas about different ways of closing a lightbox (ie. 'escape' key, clicking outside the lightbox). Through the process, I learnt how to use ``useCallback`` hook in combination with ``useEffect``
 
